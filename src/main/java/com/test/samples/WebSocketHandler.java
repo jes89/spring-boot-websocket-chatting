@@ -29,7 +29,7 @@ public class WebSocketHandler extends AbstractWebSocketHandler  {
 	    
 	    for (WebSocketSession sess : sessionList) {
 	    	System.out.println(sess.getId());
- 			sess.sendMessage(new TextMessage(session.getId() + "가 보냄 : " + message.getPayload()));
+ 			sess.sendMessage(new TextMessage(session.getId() + "가 보냄 2 : " + message.getPayload()));
  		}
 	    
 	}
@@ -39,7 +39,7 @@ public class WebSocketHandler extends AbstractWebSocketHandler  {
 	    System.out.println("New Binary Message Received");
 	    
 	    for (WebSocketSession sess : sessionList) {
-	    	sess.sendMessage(new TextMessage(session.getId() + "가 보냄 : " + message.getPayload()));
+	    	sess.sendMessage(new TextMessage(session.getId() + "가 보냄 2 : " + message.getPayload()));
  			sess.sendMessage(message);
  		}
 
